@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  margin-top: 225px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input {
+  margin: 10px;
+  padding: 10px;
+  font-size: 18px;
+  width: 400px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#quote, #result {
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #f1f1f1;
+  max-width: 500px;
+  font-size: 18px;
+}

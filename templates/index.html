@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guess that Movie!</title>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <h1 class="title">Guess that Movie!</h1>
+  <div id="quote" data-movie-id=""></div>
+  <div class="input-container">
+    <input type="text" id="guess" placeholder="Guess the movie!">
+    <button onclick="checkGuess()">Check Guess</button>
+  </div>
+  <div id="result"></div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <script>
+    window.onload = function() {
+      getQuote();
+    };
+  </script>
+</body>
+</html>
